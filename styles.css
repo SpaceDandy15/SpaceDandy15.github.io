@@ -1,0 +1,133 @@
+/* styles.css */
+
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;           
+  background-repeat: no-repeat;     
+  background-position: center center;
+  background-attachment: fixed;     
+  color: hsl(38, 100%, 50%);                     
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header {
+  background-color: #212529;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+header h1 {
+  margin: 0;
+  font-weight: 700;
+}
+nav a {
+  color: #adb5bd;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+section {
+  margin-bottom: 60px;
+}
+.about-photo {
+  max-width: 150px;
+  border-radius: 50%;
+  border: 3px solid #212529;
+}
+.project-screenshot {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+.tech-stack-list li {
+  font-weight: 600;
+  padding: 4px 0;
+}
+footer {
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.profile-pic {
+  width: 250px;
+  height: auto;
+  border-radius: 12px; /* subtle rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* Dance animation for Skills heading */
+@keyframes dance {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(5px) rotate(5deg); }
+  50% { transform: translateX(-5px) rotate(-5deg); }
+  75% { transform: translateX(5px) rotate(5deg); }
+}
+
+.dance {
+  display: inline-block;
+  animation: dance 1.5s ease-in-out infinite;
+  color: #007bff; /* bootstrap primary blue */
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .profile-pic {
+    width: 150px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .profile-pic {
+    width: 180px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .profile-pic {
+    width: 210px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .profile-pic {
+    width: 230px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .profile-pic {
+    width: 250px;
+  }
+}
